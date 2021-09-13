@@ -22,7 +22,7 @@ pipeline {
     }
     post {
         always {
-            echo ‘I will always be executed’
+            echo 'always'
         }
     }
 }
