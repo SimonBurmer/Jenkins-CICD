@@ -14,7 +14,7 @@ class TestMainPage(unittest.TestCase):
     def test_register(self):
         rv = self.app.get('/register')
         self.assertEqual(rv.status, '200 OK')
-        self.assertEqual(rv.data, b'<p>Klick to Register!</p>')
+        self.assertEqual(rv.data, b'<p>Fail</p>')
 
 if __name__ == '__main__':
     unittest.main()
