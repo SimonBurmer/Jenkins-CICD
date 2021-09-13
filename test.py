@@ -9,7 +9,7 @@ class TestMainPage(unittest.TestCase):
     def test_hello(self):
         rv = self.app.get('/')
         self.assertEqual(rv.status, '200 OK')
-        self.assertEqual(rv.data, b'<p>Hello, Woreld!</p>')  #b'' converts string to binary 
+        self.assertEqual(rv.data, b'<p>Hello, World!</p>')  #b'' converts string to binary 
 
     def test_register(self):
         rv = self.app.get('/register')
