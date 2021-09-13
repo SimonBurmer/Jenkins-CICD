@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'pip install -r requirements.txt' /* pip has to be installed on EC2 and addad to PATH!*/
+                sh 'pip install -r requirements.txt' /* pip has to be installed on EC2 and added to PATH!*/
             }
         }
         stage('Test') {
