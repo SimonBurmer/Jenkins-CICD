@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'sudo yum install python37'
                 sh 'pip install -r requirements.txt'
             }
         }
