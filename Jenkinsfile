@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh '/usr/bin/pip3 install -r requirements.txt' /* pip has to be installed on EC2! */
+                sh 'pip3 install -r requirements.txt' /* pip has to be installed on EC2! */
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'python test.py'
+                sh 'python3 test.py'
             }
         }
         stage('Deploy') {
